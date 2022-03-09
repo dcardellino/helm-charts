@@ -3,6 +3,31 @@ entries:
   synapse:
   - apiVersion: v2
     appVersion: v1.53.0
+    created: "2022-03-09T14:01:32.887549234Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.17
+    description: The reference implementation for a Matrix.org chat server
+    digest: 0e4d6d5dd41e95e54fe67c84d059bc558af20269fe9837dcca775baf719b377e
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - https://github.com/dcardellino/helm-charts/releases/download/synapse-0.9.0/synapse-0.9.0.tgz
+    version: 0.9.0
+  - apiVersion: v2
+    appVersion: v1.53.0
     created: "2022-03-09T13:22:56.340799022Z"
     dependencies:
     - condition: postgresql.enabled
@@ -26,4 +51,4 @@ entries:
     urls:
     - https://github.com/dcardellino/helm-charts/releases/download/synapse-0.8.8/synapse-0.8.8.tgz
     version: 0.8.8
-generated: "2022-03-09T13:22:56.241433687Z"
+generated: "2022-03-09T14:01:32.887563935Z"
