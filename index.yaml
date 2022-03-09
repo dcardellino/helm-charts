@@ -1,5 +1,43 @@
 apiVersion: v1
 entries:
+  nextcloud:
+  - apiVersion: v2
+    appVersion: 23.0.2
+    created: "2022-03-09T14:07:31.979013573Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.16.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.7.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: dab1beddacc2e3c73d2e95fde9f394a096ec8fcefdfc6a0106ebd7880bf0a1e6
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: dominic@cardellino.tech
+      name: dcardellino
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - https://github.com/dcardellino/helm-charts/releases/download/nextcloud-2.14.0/nextcloud-2.14.0.tgz
+    version: 2.14.0
   synapse:
   - apiVersion: v2
     appVersion: v1.53.0
@@ -51,4 +89,4 @@ entries:
     urls:
     - https://github.com/dcardellino/helm-charts/releases/download/synapse-0.8.8/synapse-0.8.8.tgz
     version: 0.8.8
-generated: "2022-03-09T14:01:32.887563935Z"
+generated: "2022-03-09T14:07:31.979340675Z"
