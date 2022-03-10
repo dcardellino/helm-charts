@@ -89,4 +89,26 @@ entries:
     urls:
     - https://github.com/dcardellino/helm-charts/releases/download/synapse-0.8.8/synapse-0.8.8.tgz
     version: 0.8.8
-generated: "2022-03-09T14:07:31.979340675Z"
+  synology-csi:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2022-03-10T11:20:24.533689631Z"
+    description: Installs the Synology CSI Driver.
+    digest: 1e6c2a7969ec381d3f48b7f6185f09a6ece9bbf24495fedf73a74f6eb33246ab
+    home: https://github.com/christian-schlichtherle/synology-csi-chart
+    keywords:
+    - Synology
+    - CSI Driver
+    maintainers:
+    - name: Christian Schlichtherle
+      url: https://github.com/christian-schlichtherle
+    - name: Dominic Cardellino
+      url: https://github.com/dcardellino
+    name: synology-csi
+    sources:
+    - https://github.com/christian-schlichtherle/synology-csi-chart/tree/main
+    - https://github.com/SynologyOpenSource/synology-csi/tree/main
+    urls:
+    - https://github.com/dcardellino/helm-charts/releases/download/synology-csi-0.4.0/synology-csi-0.4.0.tgz
+    version: 0.4.0
+generated: "2022-03-10T11:20:24.533698331Z"
